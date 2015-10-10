@@ -5,9 +5,9 @@ function setup() {
   createCanvas(windowWidth, 500);
   background(255);
   colorMode(HSB, 255);
-  rslider = createSlider(0, 255, 100);
-  gslider = createSlider(0, 255, 55);
-  bslider = createSlider(0, 255, 255);
+  rslider = createSlider(0, 255, 0);
+  gslider = createSlider(0, 255, 200);
+  bslider = createSlider(0, 255, 200);
   rslider.position(0, 550);
   gslider.position(200, 550);
   bslider.position(400, 550);
@@ -30,6 +30,5 @@ function saveImage() {
   if ( confirm("Download a copy?") === true ) {
     var name = prompt("Enter a filename:", "ellipses");
     save(name);
-  } 
-  
+  }
 }
